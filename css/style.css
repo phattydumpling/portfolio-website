@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    font-family: Fira Code, monospace;
 }
 
 :root {
@@ -19,4 +20,74 @@
     --h1-font: 6rem;
     --h2-font: 3.8rem;
     --p-font: 1.1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 20px 14%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s ease;
+}
+
+.logo img {
+    max-width: 80px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--other-color);
+    margin: 0 30px;
+    transition: all .6s ease;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+.navbar a.active {
+    color: var(--text-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu-icon {
+    z-index: 10001;
+    font-size: 40px;
+    margin-left: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 110px 14% 90px;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/portfolio-website/images/me.JPG);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
