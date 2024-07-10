@@ -51,7 +51,7 @@ header {
     display: inline-block;
     font-size: 20px;
     font-weight: 300;
-    color: var(--other-color);
+    color: black;
     margin: 0 30px;
     transition: all .6s ease;
 }
@@ -214,6 +214,31 @@ section {
 }
 
 .about-text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.resume-text h2 {
+    margin: 22px 0;
+    font-size: var(--h2-font);
+}
+
+.resume-text h2 span {
+    background: -webkit-linear-gradient(135deg, #e1bac5 0%, var(--main-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.resume-text ul {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.7;
