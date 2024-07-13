@@ -17,7 +17,7 @@
     --alt-color: #4b4b51;
     --ann-color: #c7c6d3;
 
-    --h1-font: 6rem;
+    --h1-font: 5.6rem;
     --h2-font: 3.3rem;
     --p-font: 1.1rem;
 }
@@ -200,7 +200,7 @@ section {
 }
 
 .about-text h2 {
-    margin: 22px 0;
+    margin: 14px -14px;
     font-size: var(--h2-font);
 }
 
