@@ -1,8 +1,26 @@
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
-    header.classList.toggle("sticky", window.ScrollY > 130);
-})
+    header.classList.toggle("sticky", window.scrollY > 130);
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar a');
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) { // 60 is the offset for the fixed header height
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
+});
 
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
