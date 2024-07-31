@@ -96,13 +96,18 @@ section {
     padding-top: 30px;
 }
 
-.home-text h2 {
-    font-size: 5rem;
-}
-
 .home-text h1 {
     margin: 20px 0;
     font-size: var(--h1-font);
+}
+
+.home .home-text h3 {
+    font-size: 5rem;
+    margin: 10px -4px;
+}
+
+.home .home-text .h-line {
+    margin: 0px -8px;
 }
 
 
